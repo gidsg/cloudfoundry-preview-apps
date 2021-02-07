@@ -2,7 +2,9 @@
 FROM node:current-alpine
 
 # Install CF CLI
-RUN yum install cf7-cli
+RUN apk update && apk add curl
+RUN curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
+RUN mv cf /usr/local/bin
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
