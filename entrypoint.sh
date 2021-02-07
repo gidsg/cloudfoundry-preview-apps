@@ -3,5 +3,4 @@
 echo "Hello $1"
 time=$(date)
 echo "::set-output name=time::$time"
-cf --version
-python --version
+node --version
