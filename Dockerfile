@@ -8,7 +8,7 @@ RUN mv cf7 /usr/local/bin
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 WORKDIR /usr/app
-COPY ./ /usr/app
 RUN npm install --production
+COPY ./ /usr/app
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["npm","start"]
