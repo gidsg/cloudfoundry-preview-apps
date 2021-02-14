@@ -1,9 +1,9 @@
 
 'use strict';
-const core = require('@actions/core')
+import * as core from '@actions/github';
 
-const myInput = core.getInput('who-to-greet');
-core.debug(`Hello ${myInput} from inside a container`);
+const myInput = core.core.getInput('who-to-greet');
+
 
 const context = github.context;
-console.log(`We can even get context data, like the repo: ${context.repo.repo}`)
+console.log(`We can even get context data, like the repo: ${core.context.repo.repo}`)
