@@ -7,4 +7,4 @@ RUN curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&ver
 RUN mv cf7 /usr/local/bin
 COPY . .
 RUN npm install --production
-ENTRYPOINT ["node", "/lib/main.js"]
+ENTRYPOINT ["npm", "start"]
