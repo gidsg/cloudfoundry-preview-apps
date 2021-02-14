@@ -1,5 +1,6 @@
 
-import * as core from '@actions/core';
+'use strict';
+const core = require('@actions/core')
 
 const myInput = core.getInput('who-to-greet');
 core.debug(`Hello ${myInput} from inside a container`);
