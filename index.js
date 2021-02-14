@@ -1,6 +1,8 @@
 
-'use strict';
-import * as core from '@actions/github';
+const github = require('@actions/github');
+const core = require('@actions/core');
 
-const context = core.context;
+const nameToGreet = core.getInput('who-to-greet');
+console.log(`Hello ${nameToGreet}!`);
+const context = github.context
 console.log(`We can even get context data, like the repo: ${context.repo.repo}`)
