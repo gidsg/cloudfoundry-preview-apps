@@ -1,0 +1,22 @@
+{
+  "name": "cloudfoundry-preview-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gidsg/cloudfoundry-preview-apps.git"
+  },
+  "author": "Gideon Goldberg (https://github.com/gidsg)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gidsg/cloudfoundry-preview-apps/issues"
+  },
+  "homepage": "https://github.com/gidsg/cloudfoundry-preview-apps#readme",
+  "dependencies": {
+    "@actions/github": "^4.0.0"
+  }
+}
